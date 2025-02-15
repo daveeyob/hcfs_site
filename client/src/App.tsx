@@ -1,11 +1,10 @@
-import { Switch, Route, useLocation } from "wouter";
+import { Switch, Route } from "wouter";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { queryClient } from "./lib/queryClient";
 import { Toaster } from "@/components/ui/toaster";
 import NotFound from "@/pages/not-found";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import { useEffect } from "react";
 
 // Pages
 import Home from "@/pages/Home";
@@ -22,12 +21,6 @@ import MobileMoneyPartners from "@/pages/mobile-money/Partners";
 import MobileMoneyStructure from "@/pages/mobile-money/Structure";
 
 function Router() {
-  const [location] = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
-
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -40,12 +33,12 @@ function Router() {
           <Route path="/team" component={Team} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
-
+          
           {/* Mobile Money Routes */}
           <Route path="/mobile-money" component={MobileMoneyHome} />
           <Route path="/mobile-money/partners" component={MobileMoneyPartners} />
           <Route path="/mobile-money/structure" component={MobileMoneyStructure} />
-
+          
           <Route component={NotFound} />
         </Switch>
       </main>
