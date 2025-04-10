@@ -1,13 +1,14 @@
 import AnimatedSection from "@/components/shared/AnimatedSection";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
-import { Building2, CheckCircle2 } from "lucide-react";
+import { Bolt, Building, Building2, CheckCircle2, Satellite, SatelliteDish } from "lucide-react";
 
 const partners = [
   {
     name: "Bank of Eritrea",
     type: "Central Bank",
     role: "Regulatory Partner",
+    icon: Building2,
     benefits: [
       "Regulatory compliance",
       "Financial oversight",
@@ -16,24 +17,36 @@ const partners = [
     image: "https://images.unsplash.com/photo-1599050751795-6cdaafbc2319"
   },
   {
-    name: "Commercial Bank of Eritrea",
-    type: "Commercial Bank",
+    name: "Local Banks",
+    type: "Housing and Commerce Bank of Eritrea & Commercial Bank of Eritrea",
     role: "Banking Partner",
+    icon: Building,
     benefits: [
-      "Account integration",
-      "Bank transfers",
-      "Financial services"
+      "Guardian of Fenced Account",
+      "Bank transfers"
     ],
     image: "https://images.unsplash.com/photo-1586880244543-0528a802be97"
   },
   {
     name: "EriTel",
     type: "Telecommunications",
-    role: "Network Partner",
+    role: "ISP/Networking Partner",
+    icon: SatelliteDish,
     benefits: [
       "Mobile network coverage",
       "USSD services",
       "Technical infrastructure"
+    ],
+    image: "https://images.unsplash.com/photo-1554260570-e9689a3418b8"
+  },
+  {
+    name: "6Dee",
+    type: "Platform Vendors",
+    role: "Software Implementation and Licencing",
+    icon: Bolt,
+    benefits: [
+      "Platform development and maintenance",
+      "Technical Support and consultations",
     ],
     image: "https://images.unsplash.com/photo-1554260570-e9689a3418b8"
   }
@@ -69,7 +82,7 @@ export default function Partners() {
                       className="object-cover w-full h-full"
                     />
                     <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-                      <Building2 className="h-16 w-16 text-white" />
+                      <partner.icon className="h-16 w-16 text-white" />
                     </div>
                   </div>
                 </div>

@@ -4,33 +4,33 @@ import { motion } from "framer-motion";
 
 const team = [
   {
-    name: "Sarah Johnson",
-    role: "Chief Executive Officer",
-    bio: "20+ years of experience in international finance",
+    name: "Samuel Mehari",
+    role: "General Manager",
+    bio: "Msc. Buissness Administration",
     image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644"
   },
   {
-    name: "Michael Chen",
-    role: "Head of Operations",
-    bio: "Expert in digital transformation and process optimization",
+    name: "Mulugeta Yohannes",
+    role: "Head of Marketing",
+    bio: "Msc.Buissness Administration ",
     image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c"
   },
   {
-    name: "Emily Williams",
-    role: "Financial Director",
-    bio: "Chartered accountant with expertise in African markets",
+    name: "Eskindr Yohannes",
+    role: "Head of Commerce and Customer Service.",
+    bio: "Bsc. Management",
     image: "https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a"
   },
   {
-    name: "Daniel Tesfay",
-    role: "Mobile Money Lead",
-    bio: "Pioneer in digital payment solutions",
+    name: "Solomon Yohannes",
+    role: "Head Of Accounts",
+    bio: "Bsc. Accounting",
     image: "https://images.unsplash.com/photo-1552664730-d307ca884978"
   },
   {
-    name: "Sophia Haile",
-    role: "Customer Relations Manager",
-    bio: "Dedicated to excellent customer service",
+    name: "Dawit Eyob",
+    role: "Head of Information and Technology",
+    bio: "Bsc. Computer Science",
     image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
   }
 ];
@@ -43,8 +43,7 @@ export default function Team() {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h1 className="text-4xl font-bold mb-4">Our Leadership Team</h1>
             <p className="text-muted-foreground">
-              Meet the experienced professionals driving innovation in Eritrean
-              financial services
+              Meet the experienced professionals driving innovation in HCFS.
             </p>
           </div>
         </AnimatedSection>
@@ -81,8 +80,8 @@ export default function Team() {
         <AnimatedSection className="mt-16">
           <div className="max-w-3xl mx-auto text-center">
             <p className="text-muted-foreground">
-              Our team combines local expertise with international experience to
-              deliver the best financial services to our customers
+              Our team combines local expertise with deep experiences to
+              deliver the best financial services to our customers.
             </p>
           </div>
         </AnimatedSection>

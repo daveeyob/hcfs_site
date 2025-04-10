@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowDown, ArrowDown01, ArrowDownCircle, ArrowDownFromLine, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
@@ -26,9 +26,9 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
             className="text-4xl md:text-6xl font-bold leading-tight"
           >
-            Modern Financial Solutions for{" "}
+            Modern Financial Solutions.{" "}
             <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
-              Eritrea
+        
             </span>
           </motion.h1>
 
@@ -48,16 +48,18 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="flex gap-4"
           >
-            <Link href="/services">
-              <Button size="lg" className="gap-2">
-                Our Services
-                <ArrowRight className="h-4 w-4" />
+            <Link href="#his">
+              <Button size="lg" className="gap-2"
+                   onClick={() => document.querySelector('#his')?.scrollIntoView({ behavior: 'smooth' })}
+              >
+                Get to know us better
+                <ArrowDown className="h-4 w-4" />
               </Button>
             </Link>
             <Link href="/contact">
-              <Button size="lg" variant="outline">
+              {/* <Button size="lg" variant="outline">
                 Contact Us
-              </Button>
+              </Button> */}
             </Link>
           </motion.div>
         </div>

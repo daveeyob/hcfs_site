@@ -39,8 +39,8 @@ export default function Contact() {
           </div>
         </AnimatedSection>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          <AnimatedSection>
+        <div className="grid md:grid-cols-1 gap-8">
+          {/* <AnimatedSection>
             <Card>
               <CardContent className="p-6">
                 <h2 className="text-2xl font-bold mb-6">Send us a message</h2>
@@ -102,7 +102,7 @@ export default function Contact() {
                 </form>
               </CardContent>
             </Card>
-          </AnimatedSection>
+          </AnimatedSection> */}
 
           <AnimatedSection>
             <Card>
@@ -114,7 +114,7 @@ export default function Contact() {
                     <div>
                       <h3 className="font-semibold">Address</h3>
                       <p className="text-muted-foreground">
-                        Harnet Avenue, Downtown Asmara, Eritrea
+                        Bahty Meskerem Sq. Asmara, Eritrea
                       </p>
                     </div>
                   </div>
@@ -123,7 +123,8 @@ export default function Contact() {
                     <Phone className="h-6 w-6 text-primary mt-1" />
                     <div>
                       <h3 className="font-semibold">Phone</h3>
-                      <p className="text-muted-foreground">+291 1234 5678</p>
+                      <p className="text-muted-foreground">+291 (1) 120788</p>
+                      <p className="text-muted-foreground">+291 (1) 120735</p>
                     </div>
                   </div>
                   
@@ -132,7 +133,10 @@ export default function Contact() {
                     <div>
                       <h3 className="font-semibold">Email</h3>
                       <p className="text-muted-foreground">
-                        contact@erifinance.com
+                      <a href="mailto:himbolasmara@gmail.com"
+                        className="text-muted-foreground hover:text-primary transition-colors">
+                        himbolasmara@gmail.com
+                      </a>
                       </p>
                     </div>
                   </div>
@@ -142,9 +146,9 @@ export default function Contact() {
                     <div>
                       <h3 className="font-semibold">Business Hours</h3>
                       <p className="text-muted-foreground">
-                        Monday - Friday: 8:00 AM - 5:00 PM
+                        Monday - Friday: 8:00 AM - 6:00 PM
                         <br />
-                        Saturday: 9:00 AM - 1:00 PM
+                        Saturday: 8:00 AM - 2:00 PM
                       </p>
                     </div>
                   </div>

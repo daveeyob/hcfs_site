@@ -6,23 +6,51 @@ import { MapPin, Phone, Clock } from "lucide-react";
 const branches = [
   {
     name: "Main Branch - Asmara",
-    address: "Downtown Asmara, Harnet Avenue",
-    phone: "+291 1234 5678",
+    address: "Bahty Meskerem Sq., Harnet Avenue",
+    phone: "+291 120788",
     hours: "Mon-Fri: 8:00 AM - 5:00 PM",
     image: "https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf"
   },
   {
-    name: "Massawa Branch",
-    address: "Port Area, Massawa",
+    name: "Keren Branch",
+    address: "Riba Building, Keren",
+    phone: "+291 1234 5680",
+    hours: "Mon-Fri: 8:00 AM - 5:00 PM",
+    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72"
+  },
+  {
+    name: "Mendefera Branch",
+    address: "City Center, Mendefera",
     phone: "+291 1234 5679",
-    hours: "Mon-Fri: 8:00 AM - 4:00 PM",
+    hours: "Mon-Fri: 8:00 AM - 5:00 PM",
     image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174"
   },
   {
-    name: "Keren Branch",
-    address: "Central Keren",
+    name: "Barentu Branch",
+    address: "City Center",
     phone: "+291 1234 5680",
-    hours: "Mon-Fri: 8:00 AM - 4:00 PM",
+    hours: "Mon-Fri: 8:00 AM - 5:00 PM",
+    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72"
+  },
+  {
+    name: "Adikeyih Branch",
+    address: "Commercial bank of Eritrea Adikeyih Branch ",
+    phone: "+291 1234 5680",
+    hours: "Mon-Fri: 8:00 AM - 5:00 PM",
+    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72"
+  },
+  {
+    name: "Senafe Branch",
+    address: "Senafe Bus Station",
+    phone: "+291 1234 5680",
+    hours: "Mon-Fri: 8:00 AM - 5:00 PM",
+    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72"
+  },
+  {
+    name: "Dekemhare Branch",
+    address: "Central Dekemhare",
+    phone: "+291 1234 5680",
+    hours: "Mon-Fri: 8:00 AM - 5:00 PM",
     image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72"
   }
 ];
@@ -35,7 +63,7 @@ export default function Branches() {
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h1 className="text-4xl font-bold mb-4">Our Branches</h1>
             <p className="text-muted-foreground">
-              Find your nearest EriFinance branch across Eritrea
+              Find your nearest Himbol branch across Eritrea.
             </p>
           </div>
         </AnimatedSection>

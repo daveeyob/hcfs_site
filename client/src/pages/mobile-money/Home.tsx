@@ -1,7 +1,7 @@
 import AnimatedSection from "@/components/shared/AnimatedSection";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Smartphone, Wallet, Shield, Zap } from "lucide-react";
+import { ArrowRight, Smartphone, Wallet, Shield, Zap, Network, ChartNetwork, NetworkIcon, LucideNetwork } from "lucide-react";
 import { Link } from "wouter";
 
 const features = [
@@ -13,7 +13,7 @@ const features = [
   {
     icon: Zap,
     title: "Instant Transfers",
-    description: "Transfer money instantly to other mobile money users"
+    description: "Transfer money instantly to any MSISDN (Mobile Number) subscriber."
   },
   {
     icon: Shield,
@@ -21,9 +21,9 @@ const features = [
     description: "Make secure payments to merchants and businesses"
   },
   {
-    icon: Smartphone,
-    title: "Mobile Top-up",
-    description: "Recharge your mobile balance directly from your wallet"
+    icon: Network,
+    title: "Vast Network",
+    description: "Recharge or Discharge your mobile balance directlty with our wide distribution of Agents"
   }
 ];
 
@@ -33,20 +33,21 @@ export default function MobileMoneyHome() {
       <div className="container">
         <AnimatedSection>
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h1 className="text-4xl font-bold mb-4">Mobile Money Solutions</h1>
+            <h1 className="text-8xl font-bold mb4">MNakfa</h1>
+            <h1 className="text-xl mb-4">Mobile Money Solutions</h1>
             <p className="text-muted-foreground text-lg mb-8">
               Experience the future of digital payments in Eritrea with our
               comprehensive mobile money platform
             </p>
             <div className="flex gap-4 justify-center">
-              <Link href="/mobile-money/partners">
-                <Button size="lg" className="gap-2">
-                  Our Partners <ArrowRight className="h-4 w-4" />
-                </Button>
-              </Link>
               <Link href="/mobile-money/structure">
                 <Button size="lg" variant="outline">
                   Learn More
+                </Button>
+              </Link>
+              <Link href="/mobile-money/partners">
+                <Button size="lg" className="gap-2">
+                  Our Partners <ArrowRight className="h-4 w-4" />
                 </Button>
               </Link>
             </div>

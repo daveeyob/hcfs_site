@@ -3,24 +3,25 @@ import { motion } from "framer-motion";
 
 const milestones = [
   {
-    year: "2010",
+    year: "1994",
     title: "Foundation",
-    description: "Established as the first dedicated financial services company in Eritrea"
+    description: "Established as the first dedicated financial services company in Asmara, Eritrea"
   },
   {
-    year: "2013",
+    year: "2005",
     title: "Remittance Services",
     description: "Launched international money transfer services"
   },
   {
     year: "2015",
-    title: "Digital Transformation",
-    description: "Introduced mobile money platform"
-  },
-  {
-    year: "2018",
     title: "National Expansion",
     description: "Extended services to all major cities in Eritrea"
+  },
+  {
+    year: "2019",
+    title: "Digital Transformation",
+    description: "Introduced mobile money platform"
+    
   },
   {
     year: "2020",
@@ -62,7 +63,7 @@ export default function History() {
                 {/* Content */}
                 <div className="w-1/2 pr-8 pl-8">
                   <div className={`${index % 2 === 0 ? "text-right" : "text-left"}`}>
-                    <span className="text-sm text-primary font-semibold">
+                    <span className="text-3xl text-primary font-bold">
                       {milestone.year}
                     </span>
                     <h3 className="text-xl font-bold mt-1 mb-2">{milestone.title}</h3>

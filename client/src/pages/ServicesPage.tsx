@@ -1,14 +1,14 @@
 import { Button } from "@/components/ui/button";
 import AnimatedSection from "@/components/shared/AnimatedSection";
 import { motion } from "framer-motion";
-import { ArrowRight, Banknote, Repeat, Phone, Building } from "lucide-react";
+import { ArrowRight, Banknote, Repeat, Phone, Building, Building2 } from "lucide-react";
 import { Link } from "wouter";
 
 const services = [
   {
     icon: Banknote,
     title: "International Remittance",
-    description: "Send and receive money worldwide with competitive rates and fast processing times.",
+    description: "Be the benefactor of our competitive rates and fast processing times.",
     image: "https://images.unsplash.com/photo-1554260570-e9689a3418b8"
   },
   {
@@ -18,14 +18,14 @@ const services = [
     image: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e"
   },
   {
-    icon: Phone,
+    icon: Building,
     title: "Mobile Money",
     description: "Digital wallet solution for easy payments, transfers, and financial management.",
     image: "https://images.unsplash.com/photo-1533234944761-2f5337579079",
     link: "/mobile-money"
   },
   {
-    icon: Building,
+    icon: Building2,
     title: "Bank Services",
     description: "Remote deposits and withdrawals through our partner bank network.",
     image: "https://images.unsplash.com/photo-1444653389962-8149286c578a"

@@ -7,12 +7,14 @@ import {
   Building,
   Store,
   ArrowRight,
-  CheckCircle2
+  CheckCircle2,
+  Building2,
+  Star
 } from "lucide-react";
 
 const tiers = [
   {
-    icon: Building,
+    icon: Building2,
     title: "Super Agent",
     description: "Financial institutions and major retailers that manage and support master agents",
     responsibilities: [
@@ -23,7 +25,7 @@ const tiers = [
     ]
   },
   {
-    icon: Store,
+    icon: Building,
     title: "Master Agent",
     description: "Regional coordinators managing multiple agents in specific areas",
     responsibilities: [
@@ -34,7 +36,7 @@ const tiers = [
     ]
   },
   {
-    icon: UserCircle,
+    icon: Store,
     title: "Agent",
     description: "Local businesses and shops providing direct services to customers",
     responsibilities: [
@@ -136,6 +138,39 @@ export default function Structure() {
                 </Card>
               </motion.div>
             ))}
+          </div>
+        </AnimatedSection>
+        
+        <AnimatedSection className="mt-16">
+          <div className="max-w-3xl text-center mx-auto">
+            <Card>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-semibold mb-4">
+                  Alternative Customer Tiers.
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  Our Customer tier includes several specially tailored profiles.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-center gap-2 text-muted-foreground">
+                    <Star className="h-4 w-4 text-primary" />
+                    Customer Profile
+                  </li>
+                  <li className="flex items-center gap-2 text-muted-foreground">
+                    <Star className="h-4 w-4 text-primary" />
+                    Merchant Profile
+                  </li>
+                  <li className="flex items-center gap-2 text-muted-foreground">
+                    <Star className="h-4 w-4 text-primary" />
+                    Enterprise Profile
+                  </li>
+                  <li className="flex items-center gap-2 text-muted-foreground">
+                    <Star className="h-4 w-4 text-primary" />
+                    Bussiness Profile
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
           </div>
         </AnimatedSection>
 
